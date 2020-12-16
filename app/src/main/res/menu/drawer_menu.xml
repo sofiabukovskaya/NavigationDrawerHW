@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/nav_alarm"
+        android:icon="@drawable/ic_alarm"
+        android:title="First color">
+    </item>
+    <item android:id="@+id/nav_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="Second color">
+    </item>
+    <item android:id="@+id/nav_extension"
+        android:icon="@drawable/ic_extension"
+        android:title="Third color">
+    </item>
+    <item android:id="@+id/nav_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="Fourth color">
+    </item>
+    <item android:id="@+id/nav_fitness"
+        android:icon="@drawable/ic_fitness"
+        android:title="Fifth color">
+    </item>
+    <item android:id="@+id/nav_person"
+        android:icon="@drawable/ic_person"
+        android:title="Sixth color">
+    </item>
+    <item android:id="@+id/nav_pets"
+        android:icon="@drawable/ic_pets"
+        android:title="Seventh color">
+    </item>
+    <item android:id="@+id/nav_saving"
+        android:icon="@drawable/ic_savings"
+        android:title="Eighth color">
+    </item>
+    <item android:id="@+id/nav_smile"
+        android:icon="@drawable/ic_smile"
+        android:title="Ninth color">
+    </item>
+    <item android:id="@+id/nav_video"
+        android:icon="@drawable/ic_video"
+        android:title="Tenth color">
+    </item>
+    <item android:id="@+id/nav_vote"
+        android:icon="@drawable/ic_vote"
+        android:title="Eleventh color">
+    </item>
+    <item android:id="@+id/nav_wash"
+        android:icon="@drawable/ic_wash"
+        android:title="Twelfth color">
+    </item>
+</group>
+
+
+</menu>
