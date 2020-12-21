@@ -9,6 +9,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -70,44 +71,45 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Log.d(tag, "In the onDestroy() event");
     }
 
+    @SuppressLint("ResourceType")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_alarm:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_calendar:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_extension:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_favorite:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_fitness:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_person:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_saving:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_smile:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_video:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_view:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_vote:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
             case R.id.nav_wash:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.layout.fragment_child, new Fragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

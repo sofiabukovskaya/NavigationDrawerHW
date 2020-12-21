@@ -9,4 +9,5 @@
      android:text="This is a first color"
      android:textSize="30dp"
      android:layout_centerInParent="true"/>
+ 
 </RelativeLayout>
